@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset=utf-8>
+  <title></title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=0">
+  <meta name="format-detection" content="telephone=yes"/>
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-control" content="no-cache">
+  <meta http-equiv="Cache" content="no-cache">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+  <link rel=icon href="../../../static/img/favicon.ico">
+  <meta name="wpk-bid" content="dta_2_73972">
+</head>
+
+<body style="margin:0px 0px">
+  <div id=app></div>
+  <script>
+    if (typeof localStorage === 'object') {
+      try {
+        localStorage.setItem('localStorage', 1);
+        localStorage.removeItem('localStorage');
+      } catch (e) {
+        Storage.prototype._setItem = Storage.prototype.setItem;
+        Storage.prototype.setItem = function () { };
+        alert('您处于无痕模式 无法使用全部功能');
+      }
+    }
+  </script>
+<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+</body>
+
+</html>

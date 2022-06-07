@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tcloud-crm-web
+  labels:
+    app: tcloud-crm-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: tcloud-crm-web
+  template:
+    metadata:
+      labels:
+        app: tcloud-crm-web
+    spec:
+      containers:
+        - name: tcloud-crm-web
+          image: '192.168.1.153:7000/tcloud-crm-web'
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+              hostPort: 8082
+      nodeSelector:
+        node: 71360-gateway
+      imagePullSecrets:
+        - name: regsecret

@@ -1,0 +1,64 @@
+$redText:#ff1818;
+$greenText:#009520;
+$lightGrayText:#D3D3D3;
+$grayText:#999999;
+$blueText:#1890FF;
+$tipText:#909399;
+$yellowText:#FFEA00;
+$lightBlueText:#61C9FF;
+$orangeText:#FFA800;
+$pinkGreenText:#00D000;
+
+
+$smallFontSize:0.2rem;
+$defaultFontSize:0.24rem;
+$mediumFontSize:0.28rem;
+$largeFontSize:0.32rem;
+$bigFontSize:0.36rem;
+$lightGrayBackground:#edf0f3;
+.redText{
+  color: $redText;
+}
+.greenText{
+  color: $greenText;
+}
+.lightGrayText{
+  color: $lightGrayText;
+}
+.grayText{
+  color: $grayText;
+}
+.blueText{
+  color: $blueText;
+}
+.tipText{
+  color: $tipText;
+}
+.yellowText{
+  color: $yellowText;
+}
+.lightBlueText{
+  color: $lightBlueText;
+}
+.orangeText{
+  color: $orangeText;
+}
+.pinkGreenText{
+  color: $pinkGreenText;
+}
+// size
+.small-size{
+  font-size: $smallFontSize;
+}
+.default-size{
+  font-size: $defaultFontSize;
+}
+.medium-size{
+  font-size: $mediumFontSize;
+}
+.large-size{
+  font-size: $largeFontSize;
+}
+.big-size{
+  font-size: $bigFontSize;
+}
